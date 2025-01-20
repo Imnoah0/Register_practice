@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+<body>
+   <div class="form-container">
+    <h1>REGISTRATION FORM</h1>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">MALE</option>
+          <option value="female">FAMALE</option>
+          <option value="other">OTHER</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit">Submit</button>
+        <button type="button" class="clear" onclick="clearForm()">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Function to clear the form
+    function clearForm() {
+      document.getElementById('registrationForm').reset();
+    }
+  </script>
+ </body>
+ </html>
